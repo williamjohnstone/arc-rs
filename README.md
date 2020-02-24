@@ -5,7 +5,7 @@ arc-rs (**A**uto**RC**lone-**r**u**s**t) is a complete rewrite of [My first atte
 ## TODO
 
 - [ ] Implement [RClone config parser](https://github.com/endevrr/AutoRclone-Rewrite/blob/master/util/config_parser.py) in rust
-- [x] Implement [util/arg_parser.py](https://github.com/endevrr/AutoRclone-Rewrite/blob/master/util/arg_parser.py) in rust
+- [ ] Implement [util/arg_parser.py](https://github.com/endevrr/AutoRclone-Rewrite/blob/master/util/arg_parser.py) in rust
 
 ## Changelog
 
