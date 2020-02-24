@@ -1,0 +1,35 @@
+name: arc (AutoRClone)
+version: "0.1.0"
+author: Endevrr <github.com/endevrr>
+args:
+    - config:
+        short: c
+        long: config
+        value_name: config_file
+        help: Sets the path to the exisiting rclone config file
+        takes_value: true
+    - name:
+        short: n
+        long: job-name
+        value_name: job_name
+        help: Sets the ARC job name
+        takes_value: true
+    - verbose:
+        short: v
+        multiple: true
+        help: Sets the level of verbosity (-v for level 1, -vv for level 2, omit for regular logging level)
+    #- source:
+
+subcommands:
+    - copy:
+        about: Copy files from source to dest, skipping already copied
+        args:
+            - debug:
+                short: d
+                help: print debug information
+    - move:
+        about: Move files from source to destinaton (delete files on source)
+        args: 
+    - sync:
+        about: Sync the source to the destination, changing the destination only. Doesn’t transfer unchanged files, testing by size and modification time or MD5SUM. Destination is updated to match source, including deleting files if necessary.
+        args:
